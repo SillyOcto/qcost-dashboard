@@ -1,0 +1,35 @@
+# 시크릿 (절대 커밋 금지)
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.env
+*.env
+
+# 파이썬
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 로그 / 캐시
+*.log
+.cache/
+
+# 런타임에 생성되는 데이터 (Streamlit Cloud는 재시작 시 파일시스템이 초기화됨 — 영속 저장소 아님)
+output/
+**/output/data_store/
+
+# 데이터 파일(csv/xlsx) — 더미/합성본이라도 저장소에 올리지 않기로 결정(2026-10-02).
+# 앱은 이 파일들이 없어도 크래시하지 않고 "업로드된 데이터가 없습니다" 안내로 넘어간다
+# (app/app.py의 자동시드 로직을 그렇게 수정함). 실사용 시 사이드바에서 직접 업로드.
+*.csv
+*.xlsx
+*.xls
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 에디터
+.vscode/
+.idea/

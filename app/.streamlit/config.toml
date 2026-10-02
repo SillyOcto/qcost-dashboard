@@ -1,0 +1,10 @@
+# (v15.0) 다크 테마 전환 — 사이드바/버튼/셀렉트박스 등 Streamlit 기본 위젯은 여기서 설정한
+# 테마를 따라간다(직접 CSS로 내부 클래스를 덮어쓰는 것보다 안정적). 색상은 design/design.md 2.5절
+# "다크 모드" 규칙(배경/텍스트 반전, 포인트 컬러는 400 단계 사용) 그대로 반영.
+[theme]
+base = "dark"
+primaryColor = "#EF5C33"
+backgroundColor = "#14191D"
+secondaryBackgroundColor = "#1C2328"
+textColor = "#FBFBFB"
+font = "sans serif"
